@@ -33,15 +33,7 @@ public class CannonAgent : Agent
         switch (Mathf.FloorToInt(vectorAction[0]))
         {
             case 0:
-                if (cannon.Shoot())
-                {
-                    AddReward(0.02f);
-                    shots++;
-                }
-                else
-                {
-                    AddReward(-0.01f);
-                }
+                // idle
                 break;
             case 1:
                 cannon.Move(-cannon.Speed);
@@ -50,7 +42,15 @@ public class CannonAgent : Agent
                 cannon.Move(cannon.Speed);
                 break;
             case 3:
-                // idle
+            	if (cannon.Shoot())
+                {
+                    AddReward(0.02f);
+                    shots++;
+                }
+                else
+                {
+                    AddReward(-0.01f);
+                }
                 break;
             default:
                 break;
