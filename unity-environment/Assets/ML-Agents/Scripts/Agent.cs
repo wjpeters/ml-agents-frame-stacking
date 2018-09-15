@@ -515,7 +515,8 @@ namespace MLAgents
             /// Added by M.Baske to enable frame-stacking.
             ///
             visualObservations = brain.gameObject.GetComponent<VisualObservations>();
-            visualObservations.OnAgentResetData(this);
+            if (visualObservations)
+            	visualObservations.OnAgentResetData(this);
         }
 
         /// <summary>
@@ -570,7 +571,8 @@ namespace MLAgents
 
             /// Modified by M.Baske to enable frame-stacking.
             ///
-            visualObservations.ApplyObservations(this, info.visualObservations);
+            if (visualObservations)
+            	visualObservations.ApplyObservations(this, info.visualObservations);
 
             /// Original code:
             /*
