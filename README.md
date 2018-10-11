@@ -51,8 +51,3 @@ Toggle the agent info screen and change inspector settings for Visual Observatio
 * Scale visual observations display: + / -
 * Move cannon: left / right arrow
 * Shoot: space
-
-### Notes
-Changes to the Agent class are minimal and commented. It now merely delegates mapping of cameras to observations to the VisualObservations class.
-
-Pixel addition, subtraction and desaturation are implemented by iterating over Texture2D data. Suggestions on if/how this can be done more efficiently using shaders are highly welcome. The desaturation step is actually redundant, but I included it anyway for the convenience of checking image contrasts. 
