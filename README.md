@@ -2,11 +2,7 @@
 
 ## Frame-Stacking for Unity ML-Agents v0.5
 
-<<<<<<< HEAD
 A workaround to enable frame-stacking in [ml-agents v0.5](https://github.com/Unity-Technologies/ml-agents/releases/tag/0.5.0a) environments.
-=======
-A workaround to enable frame-stacking in [ml-agents](https://github.com/Unity-Technologies/ml-agents) v0.5 environments.
->>>>>>> master
  
 ### How to use
 * Copy [VisualObservations.cs](https://github.com/mbaske/ml-agents-frame-stacking/blob/master/unity-environment/Assets/ML-Agents/Scripts/VisualObservations.cs) and the modified [Agent.cs](https://github.com/mbaske/ml-agents-frame-stacking/blob/master/unity-environment/Assets/ML-Agents/Scripts/Agent.cs) file into your project's /Assets/ML-Agents/Scripts/ directory. 
