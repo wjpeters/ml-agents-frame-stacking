@@ -1,8 +1,12 @@
 
 
-## Frame-Stacking for Unity ML-Agents
+## Frame-Stacking for Unity ML-Agents v0.5
 
+<<<<<<< HEAD
+A workaround to enable frame-stacking in [ml-agents v0.5](https://github.com/Unity-Technologies/ml-agents/releases/tag/0.5.0a) environments.
+=======
 A workaround to enable frame-stacking in [ml-agents](https://github.com/Unity-Technologies/ml-agents) v0.5 environments.
+>>>>>>> master
  
 ### How to use
 * Copy [VisualObservations.cs](https://github.com/mbaske/ml-agents-frame-stacking/blob/master/unity-environment/Assets/ML-Agents/Scripts/VisualObservations.cs) and the modified [Agent.cs](https://github.com/mbaske/ml-agents-frame-stacking/blob/master/unity-environment/Assets/ML-Agents/Scripts/Agent.cs) file into your project's /Assets/ML-Agents/Scripts/ directory. 
@@ -35,11 +39,11 @@ The ID must match the inspector field **Texture ID**. Stacking options listed ab
 
 	Add Frames: 2, Skip Frames: 3, Stacking Mode: Normal
 	
-	Camera frames  01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 .. [real-time]
+	Camera frames  01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 .. real-time
 
-	Visual         01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 .. [real-time]
-	Observations   -- -- -- -- 01 02 03 04 05 06 07 08 09 10 11 12 .. [delayed]
-	               -- -- -- -- -- -- -- -- 01 02 03 04 05 06 07 08 .. [delayed]
+	Visual         01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 .. real-time
+	Observations   -- -- -- -- 01 02 03 04 05 06 07 08 09 10 11 12 .. delayed
+	               -- -- -- -- -- -- -- -- 01 02 03 04 05 06 07 08 .. delayed
 	            
 	-- empty black texture
 	
