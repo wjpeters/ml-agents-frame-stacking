@@ -50,4 +50,4 @@ Toggle the agent info screen and change inspector settings for Visual Observatio
 * Toggle agent info: 1 - 9
 * Scale visual observations display: + / -
 * Move cannon: left / right arrow
-* Shoot: space
+* Shoot: space 
